@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Navbar from '../components/Navbar'
+import TrainingModule from "../components/TrainingModule"
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
     <Layout>
 
       <div className="main">
-        <h1>This is the training center website</h1>
+        <TrainingModule/>
+        <TrainingModule/>
+        <TrainingModule/>
+        <TrainingModule/>
       </div>
 
     </Layout>
