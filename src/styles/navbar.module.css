@@ -1,4 +1,28 @@
 .navbar{
     display: flex;
     background-color: black;
+    color: orange;
+    padding: 30px 30px;
+    justify-content: space-between;
+}
+
+.flexLinks{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.li{
+    list-style-type: none;
+    margin: 5px;
+    font-size: large;
+    font-weight: bold;
 }

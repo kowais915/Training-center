@@ -1,6 +1,6 @@
 import React from 'react'
 import  {Link } from 'gatsby';
-import {navbar} from '../styles/navbar.module.css';
+import {navbar, flexLinks, link, li} from '../styles/navbar.module.css';
 
 
 const Navbar= () => {
@@ -11,10 +11,15 @@ const Navbar= () => {
                 
 
                 {/* links */}
-                <div className="links">
-                    <Link to="/" >Home</Link>
-                    <Link to="/about" >About</Link>
-                    <Link to="/" >Github</Link>
+                <div >
+                    
+                 
+
+                    <ul className={[flexLinks]}> 
+                        <li className={li}><Link to="/" className={link}>Home</Link></li>
+                        <li className={li}><Link to="/about" className={link} >About</Link></li>
+                        <li className={li}><Link to="/" className={link}>Github</Link></li>
+                    </ul>
                     
                 
                 </div>
