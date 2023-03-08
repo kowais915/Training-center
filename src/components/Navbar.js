@@ -1,10 +1,11 @@
 import React from 'react'
-import  {Link } from 'gatsby'
+import  {Link } from 'gatsby';
+import {navbar} from '../styles/navbar.module.css';
 
 
 const Navbar= () => {
     return (  
-            <nav>
+            <nav className={navbar}>
                 {/* site title */}
                 <h2>Training Center</h2>
                 
