@@ -1,13 +1,13 @@
 import React from 'react'
 import  {Link } from 'gatsby';
-import {navbar, flexLinks, link, li} from '../styles/navbar.module.css';
+import {navbar, flexLinks, link, li, title} from '../styles/navbar.module.css';
 
 
 const Navbar= () => {
     return (  
             <nav className={navbar}>
                 {/* site title */}
-                <h2>Training Center</h2>
+                <h1 className={title}>Training Center</h1>
                 
 
                 {/* links */}
