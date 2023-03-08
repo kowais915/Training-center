@@ -9,10 +9,17 @@ export default function Home() {
     <Layout>
 
       <div className="main">
-        <TrainingModule/>
-        <TrainingModule/>
-        <TrainingModule/>
-        <TrainingModule/>
+        <div className="modules">
+
+
+            <TrainingModule/>
+            <TrainingModule/>
+            <TrainingModule/>
+            <TrainingModule/>
+            <TrainingModule/>
+            <TrainingModule/>
+
+        </div>
       </div>
 
     </Layout>
