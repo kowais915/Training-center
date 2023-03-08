@@ -1,0 +1,14 @@
+.filter{
+    text-align: center;
+    margin-top: 20px;
+    border: 2px rgb(223, 211, 211) solid;
+    width: 800px;
+    margin: 0px auto;
+    margin-bottom: -60px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px orange;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-color: black;
+    color: white;
+}

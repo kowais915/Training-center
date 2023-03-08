@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link } from 'gatsby';
-import { train} from '../styles/training.module.css';
+import { train } from '../styles/training.module.css';
 
 const TrainingModule = ({title, description, repoLink, pageLink, videoLink}) => {
     return ( 
