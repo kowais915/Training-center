@@ -19,3 +19,22 @@
 .status{
     margin: 10px;
 }
+
+.title{
+    margin: 5px 5px;
+}
+
+.dropdown{
+    margin: 5px 5px;
+    font-size: 15px;
+}
+
+.video{
+    margin: 5px 5px;
+    font-size: 20px;
+}
+
+.checkboxText{
+    margin: 5px 5px;
+    font-size: 15px;
+}
