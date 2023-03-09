@@ -83,8 +83,10 @@ export default function Home({data}) {
 
 
                  {
+
+                    
                     filtered.map((mod)=>{
-                      console.log(mod.name);
+                     
         
                       return(
         
