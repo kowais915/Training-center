@@ -1,25 +1,47 @@
 import React from 'react';
 import {filter, status} from '../styles/filter.module.css';
+import {useState } from 'react';
+import {graphql } from 'gatsby'
+import e from 'cors';
 
-const Filter = () => {
+
+
+
+
+const Filter = ({status, onFilterSelection}) => {
+
+const [selected, setSelected ] = useState('');
+const[videoAvailable, setVideoAvailable ] = useState(false);
+
+
+// functions to handle the filters
+const handleStatus = (e)=>{
+    setSelected(e.target.value )
+    onFilterSelection(e.target.value, videoAvailable);
+
+}
+
+
+
+
+
+
     return (  
         <div className={filter}>
-                <div className={status}>
-                    <label htmlFor="dropdown">Status</label>
-                    <select name="status" id="dropdown">
-                        <option value="stable">stable</option>
-                        <option value="beta">beta</option>
-                        <option value="alpha">alpha</option>
-                    </select>
+             <select value={selected} onChange={handleStatus}>
+                    <option value="">
+                        All
+                    </option>
 
-                </div>
+                    {status.map((cat )=>{
+                        return(
+                            <option key={cat} value={cat}>
+                                {cat}
+                            </option>
+                        )
+                    })}
 
-
-                <div className={status}>
-                    <label htmlFor="checkbox">Videos</label>
-                    <input type="checkbox" id='checkbox' name='videos'/>
-
-                </div>
+             </select>
         </div>
     );
 }
