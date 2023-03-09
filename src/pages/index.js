@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import TrainingModule from "../components/TrainingModule"
 import {useState } from 'react'
 import {graphql} from 'gatsby'
+import Introduction from "../components/Introduction"
 
 
 
@@ -56,7 +57,11 @@ export default function Home({data}) {
     <Layout>
 
       <div className="main">
+      {/* introduction */}
 
+      <div className="introduction">
+        <Introduction/>
+      </div>
         
 
 

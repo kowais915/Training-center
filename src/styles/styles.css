@@ -21,3 +21,19 @@ body{
     margin: 150px auto;
     
 }
+
+
+/* styling the introduction section */
+
+.introduction {
+    font-size: 1.2em;
+    padding: 30px 30px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    border:2px solid #CBEDD5;
+    background-color:#CBEDD5 ;
+
+}
