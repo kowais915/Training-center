@@ -60,6 +60,7 @@ export default function Home({data}) {
       {/* introduction */}
 
       <div className="introduction">
+        
         <Introduction/>
       </div>
         
@@ -69,7 +70,7 @@ export default function Home({data}) {
             <div className="filter">
 
 
-
+         
 
                     <Filter
                       status={['alpha', 'beta', 'stable']}
