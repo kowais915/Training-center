@@ -1,10 +1,18 @@
+import { graphql } from "gatsby"
 import React from "react"
 import Filter from "../components/Filter"
 import Layout from "../components/Layout"
 import Navbar from '../components/Navbar'
 import TrainingModule from "../components/TrainingModule"
 
-export default function Home() {
+export default function Home({data}) {
+
+
+ 
+  const trainingModules = data.allTrainingModulesYaml.nodes;
+  console.log(trainingModules);
+
+
   return (
     
     <Layout>
@@ -25,12 +33,32 @@ export default function Home() {
         <div className="modules">
 
 
-            <TrainingModule/>
-            <TrainingModule/>
-            <TrainingModule/>
-            <TrainingModule/>
-            <TrainingModule/>
-            <TrainingModule/>
+         
+
+       
+           {
+            trainingModules.map((mod)=>{
+              console.log(mod.name);
+
+              return(
+
+                <TrainingModule 
+                
+                title={mod.name}
+                description ={mod.description}
+                repoLink={mod.repository}
+                videoLink={mod.videos}
+                pageLink={mod.webpage}
+
+              
+              />
+              )
+            })
+           }
+
+
+
+
 
         </div>
       </div>
@@ -41,3 +69,26 @@ export default function Home() {
 
   )
 }
+
+
+// exporting query
+
+export const query = graphql `
+
+query modules {
+  allTrainingModulesYaml {
+    nodes {
+      name
+      status
+      videos
+      webpage
+      repository
+      description
+      id
+    }
+  }
+}
+
+
+
+`
