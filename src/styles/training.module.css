@@ -8,4 +8,19 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     
 }
+.stable{
+    border: 2px rgb(228, 217, 217) solid;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #DFF0D8;
+}
+
+.stableText{
+    font-weight: bold;
+    color: rgb(35, 139, 96);
+    list-style-type: disc;
+}
 

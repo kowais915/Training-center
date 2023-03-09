@@ -1,10 +1,19 @@
 import React from 'react';
 import {Link } from 'gatsby';
-import { train } from '../styles/training.module.css';
+import { train, stable, stableText } from '../styles/training.module.css';
 
 const TrainingModule = ({title, status, description, repoLink, pageLink, videoLink}) => {
+   
+    let statusBool = false;
+
+    if(status == 'stable'){
+        statusBool = true;
+    }
+   
     return ( 
-            <div className={train}>
+            <div className={statusBool ? stable: train}>
+
+                {statusBool ? <p className={stableText}>Stable </p> : null }
                 <h2>{title}</h2>
                 <p>{description}</p>
 
