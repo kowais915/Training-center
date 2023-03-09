@@ -11,6 +11,16 @@ const TrainingModule = ({title, status, description, repoLink, pageLink, videoLi
         statusBool = true;
     }
    
+
+    // handling when there is no video link
+
+    let video = true;
+
+    if(videoLink == ''){
+        video = false;
+    }
+
+
     return ( 
             <div className={statusBool ? stable: train}>
 
@@ -20,7 +30,7 @@ const TrainingModule = ({title, status, description, repoLink, pageLink, videoLi
 
                 <Link className={github} to={repoLink}> <FaGithub className={icon} size={20} color="black" /> Github</Link>
                 <Link className={github} to={pageLink}> <FaGlobe className={icon} size={20} color="black"/>  Website</Link>
-                <Link className={github} to={videoLink}><FaYoutube className={icon}  size={20} color="red"/>Video</Link>
+                {video ? <Link className={github} to={videoLink}><FaYoutube className={icon}  size={20} color="red"/>Video</Link> : null}
                
 
             </div>
