@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Navbar from '../components/Navbar'
 import TrainingModule from "../components/TrainingModule"
 import {useState } from 'react'
-import {graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 
 
 
