@@ -1,4 +1,5 @@
 - description: 'Track code changes, undo mistakes, collaborate. This module is a must.'
+  image: 
   name: Version controlling with git
   repository: https://github.com/swcarpentry/git-novice
   status: stable
@@ -6,6 +7,7 @@
   webpage: http://swcarpentry.github.io/git-novice
   id: git
 - description: 'Learn to work with branches and more with this interactive webpage.'
+  image: 
   name: Advanced git
   repository: https://github.com/pcottle/learnGitBranching
   status: stable
@@ -13,6 +15,7 @@
   webpage: https://learngitbranching.js.org/?locale=en_US
   id: advancedgit
 - description: 'Get started with an incredibly popular programming language.'
+  image: 
   name: Programming with python
   repository: https://github.com/swcarpentry/python-novice-inflammation
   status: stable
@@ -20,6 +23,7 @@
   webpage: http://swcarpentry.github.io/python-novice-inflammation
   id: python
 - description: 'A full introduction to C++ based on a series of slides and exercises.'
+  image: 
   name: HEP C++ Course
   repository: https://github.com/hsf-training/cpluspluscourse
   status: stable
@@ -27,6 +31,7 @@
   webpage: https://github.com/hsf-training/cpluspluscourse#-getting-the-latest-pdf
   id: hepcpp
 - description: 'Building code is hard. <code>CMake</code> makes it easier.'
+  image: 
   name: 'Build systems:  <code>cmake</code>'
   repository: https://github.com/hsf-training/hsf-training-cmake-webpage
   status: stable
@@ -34,6 +39,7 @@
   webpage: https://hsf-training.github.io/hsf-training-cmake-webpage/
   id: cmake
 - description: ''
+  image: 
   name: Distributed file systems and grid computing
   repository: ''
   status: alpha

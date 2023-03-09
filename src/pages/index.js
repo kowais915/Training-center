@@ -43,7 +43,7 @@ export default function Home({data}) {
               return(
 
                 <TrainingModule 
-
+                key  = {mod.id}
                 title={mod.name}
                 description ={mod.description}
                 repoLink={mod.repository}
