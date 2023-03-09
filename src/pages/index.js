@@ -43,12 +43,13 @@ export default function Home({data}) {
               return(
 
                 <TrainingModule 
-                
+
                 title={mod.name}
                 description ={mod.description}
                 repoLink={mod.repository}
                 videoLink={mod.videos}
                 pageLink={mod.webpage}
+                status={mod.status}
 
               
               />
