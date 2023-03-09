@@ -6,6 +6,40 @@
     width: 350px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+    
+    
+}
+.stable{
+    border: 2px rgb(228, 217, 217) solid;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #c9ebbc;
+}
+
+.stableText{
+    font-weight: bold;
+    color: rgb(35, 139, 96);
     
 }
 
+.github{
+    margin: 0px 5px;
+    padding: 0px 5px;
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+.alpbeta{
+    font-weight: bold;
+}
+.icon{
+    padding-top: 20px;
+    padding-right: 5px;
+    width: 20px;
+    margin: -2px auto;
+}
