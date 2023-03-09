@@ -21,6 +21,12 @@ const handleStatus = (e)=>{
 
 }
 
+// funtion to handle the checkbox
+
+const checkboxHandler = (e )=>{
+    setVideoAvailable(e.target.checked)
+    onFilterSelection(selected, e.target.checked)
+}
 
 
 
@@ -42,6 +48,18 @@ const handleStatus = (e)=>{
                     })}
 
              </select>
+
+
+             <label >
+                <input type="checkbox"
+                checked={videoAvailable}
+                onChange ={checkboxHandler} 
+                
+                
+                />
+                videos
+
+             </label>
         </div>
     );
 }
