@@ -6,23 +6,23 @@ import TrainingModule from './TrainingModule';
 const Filter = ({filterChange, item}) => {
 
     // using the useStaticQuery hook here
-// const modules = useStaticQuery( graphql`
-// query modules {
-//     allTrainingModulesYaml {
-//       nodes {
-//         name
-//         status
-//         videos
-//         webpage
-//         repository
-//         description
-//         id
-//       }
-//     }
-//   }
+const modules = useStaticQuery( graphql`
+query modules {
+    allTrainingModulesYaml {
+      nodes {
+        name
+        status
+        videos
+        webpage
+        repository
+        description
+        id
+      }
+    }
+  }
 
 
-// `);
+ `);
 
     const [selectedItem, setSelectedItem ] = useState("all");
 
@@ -44,9 +44,11 @@ const dropHandle = (event )=>{
 
 // filterd modules
 
-// const filteredModules = modules.nodes.filter((node)=>{
-//     node.fieldTofilter === selectedItem
-// });
+console.log(modules.allTrainingModulesYaml.nodes)
+
+const filteredModules = modules.allTrainingModulesYaml.nodes.filter((node)=>{
+   return node.fieldTofilter === selectedItem
+});
 
 
     return (  
@@ -77,14 +79,14 @@ const dropHandle = (event )=>{
                 {/* using the modules component here to render data based on filter */}
 
                 {
-                    // filteredModules.map((node)=>{
-                    //     <TrainingModule 
-                    //         title={node.name}
-                    //         description = {node.description}
+                    filteredModules.map((node)=>{
+                        <TrainingModule 
+                            title={node.name}
+                            description = {node.description}
                         
                         
-                    //     />
-                    // })
+                        />
+                    })
                 }
 
         </div>

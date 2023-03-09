@@ -25,12 +25,12 @@ export default function Home() {
         <div className="modules">
 
 
+            {/* <TrainingModule/>
             <TrainingModule/>
             <TrainingModule/>
             <TrainingModule/>
             <TrainingModule/>
-            <TrainingModule/>
-            <TrainingModule/>
+            <TrainingModule/> */}
 
         </div>
       </div>
