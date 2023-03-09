@@ -1,8 +1,28 @@
 import React, {useState} from 'react';
 import {filter, status} from '../styles/filter.module.css';
 import {graphql, useStaticQuery } from 'gatsby';
+import TrainingModule from './TrainingModule';
 
 const Filter = ({filterChange, item}) => {
+
+    // using the useStaticQuery hook here
+// const modules = useStaticQuery( graphql`
+// query modules {
+//     allTrainingModulesYaml {
+//       nodes {
+//         name
+//         status
+//         videos
+//         webpage
+//         repository
+//         description
+//         id
+//       }
+//     }
+//   }
+
+
+// `);
 
     const [selectedItem, setSelectedItem ] = useState("all");
 
@@ -19,6 +39,15 @@ const Filter = ({filterChange, item}) => {
 const dropHandle = (event )=>{
     setSelectedItem(event.target.value)
 }
+
+
+
+// filterd modules
+
+// const filteredModules = modules.nodes.filter((node)=>{
+//     node.fieldTofilter === selectedItem
+// });
+
 
     return (  
         <div className={filter}>
@@ -45,6 +74,18 @@ const dropHandle = (event )=>{
 
                 </div> */}
 
+                {/* using the modules component here to render data based on filter */}
+
+                {
+                    // filteredModules.map((node)=>{
+                    //     <TrainingModule 
+                    //         title={node.name}
+                    //         description = {node.description}
+                        
+                        
+                    //     />
+                    // })
+                }
 
         </div>
     );
