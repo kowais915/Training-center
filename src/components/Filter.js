@@ -2,6 +2,8 @@ import React from 'react';
 import {filter, status} from '../styles/filter.module.css';
 import {useState } from 'react';
 import {graphql } from 'gatsby'
+
+import {title, dropdown, video, checkboxText} from '../styles/filter.module.css';
 import e from 'cors';
 
 
@@ -34,7 +36,9 @@ const checkboxHandler = (e )=>{
 
     return (  
         <div className={filter}>
-             <select value={selected} onChange={handleStatus}>
+             <h3 className={title}>Filter</h3>
+
+             <select className={dropdown} value={selected} onChange={handleStatus}>
                     <option value="">
                         All
                     </option>
@@ -50,12 +54,11 @@ const checkboxHandler = (e )=>{
              </select>
 
 
-             <label >
-                <input type="checkbox"
+             <label className={video} >
+                <input  type="checkbox"
                 checked={videoAvailable}
                 onChange ={checkboxHandler} 
-                
-                
+                className={checkboxText}
                 />
                 videos
 
