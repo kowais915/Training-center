@@ -6,11 +6,11 @@
     margin: 0px auto;
     margin-bottom: -60px;
     padding: 20px;
-    box-shadow: 5px 5px 20px orange;
+    box-shadow: 5px 5px 20px CBEDD5;
     border-bottom-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    background-color: black;
-    color: white;
+    background-color: #97DECE;
+    color: black;
 
     display: flex;
     justify-content: center;

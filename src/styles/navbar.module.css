@@ -1,9 +1,10 @@
 .navbar{
     display: flex;
-    background-color: black;
-    color: orange;
-    padding: 60px 40px;
+    background-color: white;
+    color: #439A97;
+    padding: 30px 40px;
     justify-content: space-between;
+    box-shadow: 10px 10px 20px rgb(211, 192, 192);
 }
 
 .flexLinks{
@@ -16,7 +17,7 @@
 .link{
     color: white;
     text-decoration: none;
-    color: white;
+    color: black;
     
 
 }
@@ -29,6 +30,7 @@
 }
 
 .title{
-    font-weight: Bold;
+    font-weight: 900;
+    
     font-size: 35px;
 }
