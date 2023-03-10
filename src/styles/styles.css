@@ -37,3 +37,11 @@ body{
     background-color:#CBEDD5 ;
 
 }
+
+/* styling the footer */
+
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
