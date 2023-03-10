@@ -38,6 +38,14 @@ body{
 
 }
 
+
+/* styliing the about page */
+.about{
+    padding: 200px 200px;
+    margin-bottom: 430px;
+}
+
+
 /* styling the footer */
 
 footer{

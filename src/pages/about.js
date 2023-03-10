@@ -7,8 +7,10 @@ const About = () => {
        
         <Layout>
 
-            <h1>About</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, eos ipsum, nisi hic aut neque eum tempore, eligendi perspiciatis voluptatibus modi explicabo. Facere debitis maxime quasi deserunt sapiente quis.</p>
+           <div className="about">
+           <h1>About</h1>
+            <p>This website is being developed in response to the qualification task for GSoC 2023. The site has been developed using Gatsby. The data is source is an YAML file which is queired by graphql. Both the status and the videos filters are working. </p>
+           </div>
 
         </Layout>
             
