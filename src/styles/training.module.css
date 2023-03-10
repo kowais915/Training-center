@@ -10,6 +10,10 @@
     
     
 }
+
+.train:hover{
+    transform: scale(1.05);
+}
 .stable{
     border: 2px rgb(228, 217, 217) solid;
     padding: 20px;
@@ -21,6 +25,9 @@
     overflow: hidden;
 }
 
+.stable:hover{
+    transform: scale(1.05);
+}
 .stableText{
     font-weight: bold;
     color: rgb(35, 139, 96);
