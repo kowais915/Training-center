@@ -7,7 +7,8 @@ This website is built in response to the qualification task for GSoC 2023. The w
 npm install
 npm run develop
 ```
-
+## Deployment
+ [Visit the site here](https://inspiring-sable-86d848.netlify.app/)
 
 
 
